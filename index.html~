@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>General Computer Science Examination</title>
+      <title>Examination</title>
+    
+    
+    <!-- Google Fonts integration: http://www.google.com/fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,300|Love+Ya+Like+A+Sister' rel='stylesheet' type='text/css'>
+    
+    <!-- Normalize to clean up & standardize the browser default styles: http://necolas.github.io/normalize.css/ -->
+    <link rel="stylesheet" href="css/normalize.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <div class="container">
+      <header class="main">
+        <nav>
+          <ul class="clearfix">
+            <li id="logo"><a href="index.html" title="exams-logo">exam</a></li>
+            <li><h2><a href="NewQuiz">Online Exam</a></h2></li> 
+            <li><h2><a href="login.html">Login</a></h2></li>
+             <li><h2><a href="Read.html">Resources</a></h2></li> 
+          </ul>
+        </nav>
+      </header>
+    </div><!-- end container -->  
+    
+    <div id="hero">
+      <div class="container">
+      
+        <img src="txt.jpg" alt="Exam Rocks">
+        
+      </div><!-- end container -->
+    </div><!-- end hero -->
+  </head>
+  <body>
+
+ 
+
+                     
+  
+
+
+
+    <footer class="main">
+      <div class="container clearfix">
+      
+        <div id="copyright">
+          <p>Copyright &copy; 2014 <strong>Jacobs University</strong></p>
+         
+        </div><!-- end copyright -->
+        
+        <div id="credits">
+          <p>Sustainably coded with love by Lidiya Tilahun </a></p>
+        </div><!-- end credits -->
+
+        <div class="footer-menu">
+          <nav>
+            <ul>
+              <li><a href="">Contact</a></li>
+              <li><a href="">Privacy Policy</a></li>    
+              <li><a href="">Terms and Conditions</a></li>
+              <li><a href="imprint.html">Imprint</a></li>
+            </ul>
+          </nav>
+        </div><!-- end footer menu -->      
+      </div><!-- end container -->
+    </footer><!-- end of footer -->
+
+   
+  </body>
+</html>
+

@@ -1,0 +1,178 @@
+<html>
+<head>
+
+
+<title> GenCS Midterm </title>
+    
+    <!-- Google Fonts integration: http://www.google.com/fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,300|Love+Ya+Like+A+Sister' rel='stylesheet' type='text/css'>
+    
+    <!-- Normalize to clean up & standardize the browser default styles: http://necolas.github.io/normalize.css/ -->
+    <link rel="stylesheet" href="css/normalize.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+        <div class="container">
+      <header class="main">
+        <nav>
+          <ul class="clearfix">
+            <li id="logo"><a href="index.html" title="Home">exam</a></li>
+            <li><h2><a href="Read.html">Resources</a></h2></li> 
+           
+          </ul>
+        </nav>
+      </header>
+    </div><!-- end container --> 
+  </head>
+<SCRIPT LANGUAGE="JavaScript">
+var Answer = new Array;
+var done = new Array;
+var YourChoice = new Array;
+
+
+var score = 0;
+var put = 0;
+var remove = 0;
+var sus = 0;
+Answer[1] = "n2";
+Answer[2] = "a";
+Answer[3] = 110101011110;
+Answer[4] = "a";
+Answer[5] = "5n";
+Answer[6] = "3n";
+Answer[7] = "Half Adder";
+Answer[8] = "c";
+Answer[9] = "a";
+Answer[10] = 15;
+Answer[11] = "Transport";
+Answer[12] = "DELETE";
+Answer[13] = "Cookie";
+Answer[14] = 1;
+Answer[15] = "Media Access Control Address";
+
+function Engine(question, answer) 
+{
+	YourChoice[question]=answer;
+  
+}
+
+function Score()
+{
+	
+	var answerText = "";
+	for(i=1;i<=15;i++)
+	{
+  		if(Answer[i]==YourChoice[i])
+  		{
+			score++;
+  		}
+	}
+	answerText=answerText+"Score : "+score+"\n";
+	var percentage = score/15*100;
+	answerText=answerText+"Total Percentage : "+percentage+"%\n"
+	score = 0;
+  
+	alert(answerText);
+}
+
+   function Timer() {
+    
+    myVar = setTimeout(Score, 4500);
+    
+}
+
+</script>
+
+</HEAD>
+
+<BODY>
+<body id="share">
+   
+
+<h1><center><em><font color = "black">Final Exam General CS II (320102) May 25., 2017</em><center></h1><font color = "black">
+<center>You have two hours(sharp) for the test;
+Write the solutions to the sheet.
+The estimated time for solving this exam is 0 minutes, leaving you 120 minutes for
+revising your exam.
+You can reach 0 points if you solve all problems. You will only need 100 points for a
+perfect score, i.e. -100 points are bonus points.
+Different problems test different skills and knowledge, so do
+not get stuck on one problem. Important note: Make Sure You Capitalize Each Word Of Your Sentence Like This. No spelling mistcakes ;) ~Lidiya</center>
+<hr>
+
+<h3>please click start when you are ready</h3>
+<input type="button" 
+value="start"
+onClick=Timer();window.open("NewQuiz")>
+<br>
+
+
+<b>1.</b> How many edges can a directed graph of size n (i.e. with n vertices) have maximally.
+Note: make sure to use n for the variable. (i.e 2n, n/2 or n2 ) 
+<input type=text name="q1" value="" onChange="Engine(1, this.value)">. <br>
+<p>
+
+<b>2. </b>find the equivalent choice for AND(a, b)  <br>
+<input type=radio name="q2" value="a" onClick="Engine(2, this.value)"> a) NAND(NAND(a, b),NAND(a, b)) <br>
+<input type=radio name="q2" value="b" onClick="Engine(2, this.value)"> b) NOR(NOR(a, b),NOR(a, b))
+ <br>
+ <input type=radio name="q2" value="c" onClick="Engine(2, this.value)"> c) NAND( NAND(a, a),NAND(b, b))  <br>
+
+
+<b>3.</b> D5E in base 16 to base 2 : <input type=text name="q3" value="" onChange="Engine(3, this.value)">.<br>
+
+<b>4.</b>_________ is constructed by feeding the outputs of two NOR gates back to the other NOR gates input. <br>
+<input type=radio name="q4" value="a" onClick="Engine(4, this.value)"> a) RS flip-flop <br>
+<input type=radio name="q4" value="b" onClick="Engine(4, this.value)"> b) D flip-flop <br>
+ <input type=radio name="q4" value="c" onClick="Engine(4, this.value)"> c) JK flip-flop <br>
+
+
+
+<b>5.</b> Cost of n-bit CCA : <input type=text name="q5" value="" onChange="Engine(5, this.value)"><br>
+
+<b>6.</b> Depth of n-bit CCA : <input type=text name="q6" value="" onChange="Engine(6, this.value)"><br>
+
+<b>7.</b> What circuit does the diagram below represent (No abbreviations)? <input type=text name="q7" value="" onChange="Engine(7, this.value)"><br clear="all" /><center><img src="HalfAdder.png" width="551" height="296" alt="" /></center><br><br>
+
+<b>8.</b>
+q0: # q1 > #<br>
+q1: 0,1 q1 > 0,1<br>
+q1: # q2 < # <br>
+q2: 0 halt < 1 <br>
+q2: 1 q2 < 0 <br>
+q2: # halt > 1  What does the turing machine do?<br>
+<input type=radio name="q8" value="a" onClick="Engine(8, this.value)"> a) shift binary number to the left <br>
+<input type=radio name="q8" value="b" onClick="Engine(8, this.value)"> b) shift binary number to the right <br> 
+<input type=radio name="q8" value="c" onClick="Engine(8, this.value)"> c) adds one to a binary number<br>
+
+<b>9.</b> Go through the prolog program below. girl(witch) would give :- </br>
+<input type=radio name="q9" value="a" onClick="Engine(9, this.value)"> a) Yes <br>
+<input type=radio name="q9" value="b" onClick="Engine(9, this.value)"> b) No <br>
+</br><center>><img src="witch.jpeg" width="277" height="146" alt="" /></center><br>
+
+<b>10.</b> 1 Petabyte is 10 raise to? <input type=text name="q10" value="" onChange="Engine(10, this.value)"> bytes<br>
+
+<b>11.</b> TCP is an example of the <input type=text name="q11" value="" onChange="Engine(11, this.value)"> layer<br>
+
+<b>12.</b> Which of the following are HTTP requests ? <br>
+<input type="checkbox" name="q12" value="DELETE" OnClick="Engine(9, this.value)">DELETE<br>
+<input type="checkbox" name="q12" value="REMOVE" OnClick="Engine(9, this.value)">REMOVE<br>
+<input type="checkbox" name="q12" value="SUSCRIBE" OnClick="Engine(9, this.value)">SUSCRIBE<br>
+
+<b>13.</b> <input type=text name="q13" value="" onChange="Engine(13, this.value)"> is a little text files left on your hard disk by some websites you visit <br>
+
+<b>14.</b> For a = 5, b = 5, what does the following program return ? <input type=text name="q14" value="" onChange="Engine(14, this.value)"><br><center><img src="simplediv.jpeg" width="300" height="100" alt="" /></center> <br>
+
+<b>15.</b> The <input type=text name="q15" value="" onChange="Engine(15, this.value)"> identifies the device uniquely on the network. <br>
+
+
+<center><input type=button onClick="Score()" value="Sumbit"></center>
+
+
+</br>
+
+</FORM>
+
+</div>
+</body>
+</html>

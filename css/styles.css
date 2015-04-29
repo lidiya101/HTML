@@ -1,0 +1,352 @@
+/* ===============================
+   Author: Hanissa Zianida
+   Date:   November 9, 2014
+   
+   Colour Palette:
+   ---------------
+   Light Cream:		#f2f3ee
+   Purple:			#990999
+   Purplish:		#e5ccff
+   Purple Footer:	#6a086b
+   =============================== */
+
+/* General */
+
+body {
+	background: #f2f3ee url('../images/bg-tile.gif') top left repeat;
+	color: #4b2707;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+	font-size: 14px;
+	font-family: 'Open Sans', "Helvetica Neue", Arial, sans-serif;
+}
+
+.container {
+	width: 924px;
+	margin: 0 auto;
+	padding: 30px 24px;
+}
+
+#login-form {
+	text-align: center;
+}
+
+/* Insert Form */
+
+.title {
+width:500px;
+height:70px;
+text-shadow:2px 2px 2px #cfcfcf;
+font-size:16px;
+text-align:center
+}
+
+form {
+width:300px;
+border:1px dashed #aaa;
+padding:10px 30px 40px;
+margin-left:70px;
+background-color:#f0f8ff
+}
+form h2 {
+text-align:center;
+text-shadow:2px 2px 2px #cfcfcf
+}
+
+.input {
+width:100%;
+height:30px;
+border-radius:2px;
+box-shadow:0 0 1px 2px #123456;
+margin-top:10px;
+padding:7px;
+border:none;
+margin-bottom:20px
+}
+.submit {
+color:#fff;
+border-radius:3px;
+background:#1F8DD6;
+padding:5px;
+margin-top:40px;
+border:none;
+width:100%;
+height:30px;
+box-shadow:0 0 1px 2px #123456;
+font-size:18px
+}
+
+/* Typography */
+
+h1, h2 {
+	font-family: 'Love Ya Like A Sister', cursive;
+	color: #990999;
+	font-size: 40px;
+	font-weight: normal;
+	line-height: 44px;
+	margin: 0;
+}
+
+h1 {
+	text-align: center;
+	background: url('../images/header-divider.png') bottom center no-repeat;
+	padding: 0 0 20px;
+}
+
+h1 em {
+	color: #4b2707;
+	font-style: normal;
+}
+
+h2 {
+	font-size: 34px;
+}
+
+h3 {
+	margin: 0;
+}
+
+p.lead {
+	font-size: 30px;
+	font-weight: 300;
+	text-align: center;
+	margin: 10px 0;
+}
+
+p {
+	margin: 0;
+}
+
+a:link {
+	color: #990999;
+}
+
+a:visited {
+	color: #990999;
+}
+
+a:hover {
+	color: #4b2707;
+}
+
+hr {
+	border: none;
+	height: 33px;
+	width: 333px;
+	margin: 30px auto;
+	background: url('../images/divider.png') center center no-repeat;
+}
+
+/* Header */
+
+.header-menu nav {
+	text-align: center;
+}
+
+.header-menu nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: inline-block;
+	line-height: 20px;
+}
+
+.header-menu nav ul li {
+	display: inline-block;
+	padding: 0px 20px 20px 20px;
+}
+
+.header-menu nav ul li a:hover {
+	padding-top: 30px;
+	background: url('../images/tiny-silhouette.png') center center no-repeat;
+	color: #000000;
+}
+
+.header-menu nav ul li a {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+header nav {
+	text-align: center;
+}
+
+header nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: inline-block;
+	line-height: 141px;
+}
+
+header nav ul li {
+	display: inline-block;
+	padding: 0 20px;
+}
+
+header nav ul li a:hover {
+	color: #ffffff;
+}
+
+header nav ul li a {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+header nav ul li#logo a {
+	display: block;
+	width: 292px;
+	height: 141px;
+	background: url('../images/logo.png') center center no-repeat;
+	text-indent: -9999px;
+}
+
+header nav ul li#logo a:hover {
+	padding: 0px;
+	background: url('../images/logo-hover.png') center center no-repeat;
+}
+
+/* Hero */
+
+#hero {
+	background: #e5ccff url('../images/bg-tile-purplish.gif') top left repeat;
+}
+
+#hero .container {
+	position: relative;
+}
+
+#hero .large-ribbon {
+	height: 190px;
+	width: 150px;
+	background: url('../images/fresh-whole-ingredients.png') top left no-repeat;
+	text-indent: -9999px;
+	position: absolute;
+	top: -23px;
+	right: -30px;
+}
+
+/* The Mission */
+
+#story-excerpt {
+	width: 530px;
+	margin-right: 24px;
+	float: left;
+	font-size: 16px;
+}
+
+#your-size {
+	background: url('../images/silhouette-women.jpg') left center no-repeat;
+	padding: 30px 0 30px 130px;
+	width: 240px;
+	float: left;
+}
+
+/* News & Events */
+
+#articles {
+	width: 370px;
+	float: left;
+	margin-right: 24px;
+}
+
+#feature-image {
+	width: 530px;
+	float: left;
+}
+
+#news-events article {
+	margin: 20px 0;
+	padding-left: 55px;
+}
+
+#news-events article.news {
+	background: url('../images/icon-news.png') top left no-repeat;
+}
+
+#news-events header time {
+	color: #990999;
+	font-size: 12px;
+}
+
+#news-events section.excerpt {
+	margin: 10px 0;
+}
+
+#news-events footer {
+	font-size: 12px;
+}
+
+/* Footer */
+
+footer.main {
+	background: #6a086b url('../images/bg-tile-purple.gif') top left repeat;
+	color: #f2f3ee;
+	padding: 30px 0;
+}
+
+footer.main a:hover {
+	color: #f2f3ee;
+}
+
+#copyright, #credits {
+	width: 240px;
+	float: left;
+	padding: 10px 0 10px 50px;
+}
+
+#copyright {
+	background: url('../images/icon-recycle.png') center left no-repeat;
+}
+
+#credits {
+	background: url('../images/icon-apple.png') center left no-repeat;
+	float: right;
+	margin-top: 5px;
+}
+
+.footer-menu nav {
+	text-align: right;
+}
+
+.footer-menu nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: inline-block;
+	line-height: 20px;
+}
+
+.footer-menu nav ul li {
+	display: inline-block;
+	padding: 40px 20px 0px 20px;
+}
+
+.footer-menu nav ul li a:hover {
+	color: #ffffff;
+	padding-top: 40px;
+}
+
+.footer-menu nav ul li a {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bold;
+}
+/* Force Elements to Self Clear its Children: http://css-tricks.com/snippets/css/clear-fix/ */
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	content: "";
+	clear: both;
+	height: 0;
+	}
+* html .group             { zoom: 1; } /* IE6 */
+*:first-child+html .group { zoom: 1; } /* IE7 */
+
+
+
+
+
